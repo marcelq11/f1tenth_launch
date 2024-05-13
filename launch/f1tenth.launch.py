@@ -131,7 +131,7 @@ def launch_setup(context, *args, **kwargs):
             [pkg_prefix, 'launch/components', 'f1tenth_control.launch.py'])),
         launch_arguments={
             'lateral_controller_mode': 'pure_pursuit',
-            'longitudinal_controller_mode': 'pid',
+            'longitudinal_controller_mode': 'eadrc',
             'vehicle_param_file': vehicle_param_file,
             'nearest_search_param_path': PathJoinSubstitution([pkg_prefix, 'config/control/common/nearest_search.param.yaml']),
             'vehicle_cmd_gate_param_path': PathJoinSubstitution([pkg_prefix, 'config/control/vehicle_cmd_gate/vehicle_cmd_gate.param.yaml']),
